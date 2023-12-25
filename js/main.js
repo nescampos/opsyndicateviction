@@ -2,7 +2,7 @@ var urlRPC = "https://rpc-testnet.viction.xyz";
 var currency = "VIC";
 var networkName = "Viction Testnet"
 const chainId = 89;
-const milisecondsToWait = 7000;
+const milisecondsToWait = 15000;
 
 var web3 = new Web3(new Web3.providers.HttpProvider(urlRPC));
 const MMSDK = new MetaMaskSDK.MetaMaskSDK();
