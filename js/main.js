@@ -19,7 +19,7 @@ async function autenticate() {
 async function loginWithMetamask() {
   const ethereum = MMSDK.getProvider() // You can also access via window.ethereum
   try {
-    var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+    var accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
     account = accounts[0];
     $('.current_account_text').text(account);
     await changeNetwork();
